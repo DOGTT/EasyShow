@@ -7,18 +7,12 @@
             "info":"音频线圈"
         }
     },
-    "projectsOut":{
-        /*
-        "project":{
-            "href":"",  //the link of project
-            "img_href":"",//the imagine link of project
-            "info":""//the info show
+    "projectsOut":[
+        {
+            "href":"http://baidu.com",
+            "img_href":"1.jpg",
+            "info":"百度"
         }
-        */
-        "project":{
-            "href":"",
-            "img_href":"",
-            "info":""
-        }
-    }
+    ]
+
 }

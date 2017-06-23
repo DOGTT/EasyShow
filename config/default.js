@@ -9,6 +9,6 @@ module.exports = {
         'simple'
     ],
     pathProjectsImg:'projects_img',
-    pathHtmlInfo:'projects_info.json'
-    
+    pathProjectsInfo:'projects_info.json'
+
 }

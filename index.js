@@ -29,7 +29,7 @@ config.pathProjectsFind.forEach(function(element) {
     app.use(express.static(pathPro));
     pathProjectGet.push(pathPro);
 }, this);
-app.locals.prList = projectGet(pathProjectGet,path.join(pathPuConfig,config.pathHtmlInfo));
+app.locals.prList = projectGet(pathProjectGet,path.join(pathPublic,config.pathProjectsInfo));
 
 
 routes(app);
