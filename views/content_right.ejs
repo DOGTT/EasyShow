@@ -10,8 +10,11 @@
     </div>
     <script>
     (function getprojects(){
-        $.get('init')
-        alert('OK');
-    });
+        var xmlhttp = new ActiveXObject();
+        xmlhttp.open('GET','content',true);
+        xmlhttp.send();
+        var data = xmlhttp.responseText;
+        alert(data);
+    })();
     </script>
 </div>
