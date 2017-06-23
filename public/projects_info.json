@@ -1,0 +1,24 @@
+{
+    "projectsIn":{
+        "index.html":{
+            "info":"地球数据可视化DEMO"
+        },
+        "audio_magic.html":{
+            "info":"音频线圈"
+        }
+    },
+    "projectsOut":{
+        /*
+        "project":{
+            "href":"",  //the link of project
+            "img_href":"",//the imagine link of project
+            "info":""//the info show
+        }
+        */
+        "project":{
+            "href":"",
+            "img_href":"",
+            "info":""
+        }
+    }
+}

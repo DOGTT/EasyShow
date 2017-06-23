@@ -1,20 +1,42 @@
 <div id = "content">
     <h2>my projects</h2>
     <div id = "projects">
-        <div class = "pr_box" >
-            <div class="box_head" >diqiudiqiu</div>
-            <a href="http://tiedh.bid" target="_blank" >
-            <img src="1.jpg" alt="fsdaf"style="width:500px;height:300px;">
-            </a>    
-        </div>
     </div>
     <script>
+    function creatbox(headT,a_link,img_link){  
+        var box = document.createElement('div');
+        box.setAttribute('class','pr_box');
+        var head = document.createElement('div');
+        head.setAttribute('class','box_head');
+        head.innerHTML = headT;
+        box.appendChild(head);
+        var a = document.createElement('a');
+        a.setAttribute('href',a_link);
+        a.setAttribute('target','_blank');
+        var img = document.createElement('img');
+        img.setAttribute('src',img_link);
+        img.setAttribute('alt',img_link+'not find!');
+        img.setAttribute('style',"width:500px;height:300px;");
+        a.appendChild(img);
+        box.appendChild(a);
+        return box;
+    }
     (function getprojects(){
-        var xmlhttp = new ActiveXObject();
+        var xmlhttp = new XMLHttpRequest();
         xmlhttp.open('GET','content',true);
         xmlhttp.send();
-        var data = xmlhttp.responseText;
-        alert(data);
+        xmlhttp.onreadystatechange = function(){
+            if(xmlhttp.readyState ==4 && xmlhttp.status == 200){
+                 var dom = document.getElementById('projects');
+                 var data = JSON.parse(xmlhttp.responseText);
+                 var prList = data.projects;
+                 for(var i =0;i<prList.length;i++){
+                     dom.appendChild(creatbox(prList[i],prList[i]+'.html',prList[i]+'.jpg'));
+                 }
+                 //alert(data.message);
+            }
+        }
+       
     })();
     </script>
 </div>
