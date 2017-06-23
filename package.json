@@ -1,0 +1,28 @@
+{
+  "name": "a-webshow",
+  "version": "1.0.0",
+  "description": "a website build",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DOGTT/webSite.git"
+  },
+  "keywords": [
+    "website",
+    "persion",
+    "webgl"
+  ],
+  "author": "tide.h",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DOGTT/webSite/issues"
+  },
+  "homepage": "https://github.com/DOGTT/webSite#readme",
+  "dependencies": {
+    "config-lite": "^2.0.0",
+    "ejs": "^2.5.6"
+  }
+}
