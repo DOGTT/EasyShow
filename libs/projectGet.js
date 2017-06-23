@@ -1,6 +1,5 @@
 var fs = require('fs');
 var GetProjectConfig = function(path,infoPath){
-    console.log(path);
     var _project = function(){
         this.href="";
         this.img_href="";
@@ -39,7 +38,8 @@ var GetProjectConfig = function(path,infoPath){
             }, this);
         }
     );
-    console.log("get :"+JSON.stringify(prList) );
+    console.log(JSON.stringify(prList) );
+    console.log("get project's info success:");
     return prList;
 }
 module.exports = GetProjectConfig;

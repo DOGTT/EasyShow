@@ -1,9 +1,9 @@
-module.exports = function(app){
+
+module.exports = function(app,pathPuLib){
     app.get('/',function(req,res){
         res.redirect('/demos');
     });
     app.get('/content',function(req,res){
-        console.log(req);
         res.send(app.locals.prList);
     });
     app.use('/demos',require('./demos'));

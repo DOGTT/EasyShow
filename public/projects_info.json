@@ -12,6 +12,11 @@
             "href":"http://baidu.com",
             "img_href":"1.jpg",
             "info":"百度"
+        },
+        {
+            "href":"http://weibo.com",
+            "img_href":"1.jpg",
+            "info":"微博"
         }
     ]
 

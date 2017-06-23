@@ -1,13 +1,16 @@
 var path = require('path');
 var express = require('express');
 var config = require('config-lite')(__dirname);
+var winston = require('winston');
+var expressWinston = require('express-winston');
+
 
 var pathPublic = path.join(__dirname,'public');
-var pathPuLib = path.join(__dirname,'lib');
-var pathPuConfig= path.join(__dirname,'config');
+var pathLib = path.join(__dirname,'libs');
+var pathConfig= path.join(__dirname,'config');
 
 var routes = require(path.join(__dirname,'routes'));
-var projectGet = require(path.join(pathPuLib,'projectGet.js'));
+var projectGet = require(path.join(pathLib,'projectGet.js'));
 var index_info = require(path.join(pathPublic,'config','index_info.js'));
 var pathProjectGet = [];
 
@@ -16,7 +19,6 @@ var app = express();
 //set view engine
 app.set('view engine','ejs');
 app.set('views',path.join(__dirname,'views'));
-
 
 //set index_info
 app.locals.index_info = index_info;
@@ -35,7 +37,30 @@ config.pathProjectsFind.forEach(function(element) {
 app.locals.prList = projectGet(pathProjectGet,path.join(pathPublic,config.pathProjectsInfo));
 
 
-routes(app);
+// log expressWinston
+app.use(expressWinston.logger({
+  transports: [
+    new (winston.transports.Console)({
+      json: true,
+      colorize: true
+    }),
+    new winston.transports.File({
+      filename: 'logs/success.log'
+    })
+  ]
+}));
+app.use(expressWinston.errorLogger({
+  transports: [
+    new winston.transports.Console({
+      json: true,
+      colorize: true
+    }),
+    new winston.transports.File({
+      filename: 'logs/error.log'
+    })
+  ]
+}));
+routes(app,pathLib);
 
 
 app.listen(config.port,function(){

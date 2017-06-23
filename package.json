@@ -24,6 +24,8 @@
   "dependencies": {
     "config-lite": "^2.0.0",
     "ejs": "^2.5.6",
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "express-winston": "^2.4.0",
+    "winston": "^2.3.1"
   }
 }
