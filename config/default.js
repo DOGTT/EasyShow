@@ -1,6 +1,4 @@
 module.exports = {
-    name:'webGL',
-    description:'author：tide.h.',
+    name:'my webGL Site',
     port:3000,
-
 }
