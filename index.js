@@ -17,18 +17,21 @@ var app = express();
 app.set('view engine','ejs');
 app.set('views',path.join(__dirname,'views'));
 
-//add public
-app.use(express.static(path.join(__dirname,'public')));
 
 //set index_info
 app.locals.index_info = index_info;
 
-
+//add public
+app.use(express.static(pathPublic));
+//add img path
+app.use(express.static(path.join(pathPublic,config.pathProjectsImg)));
+//add projects path
 config.pathProjectsFind.forEach(function(element) {
     var pathPro = path.join(pathPublic,config.pathProjectsBasic,element);
     app.use(express.static(pathPro));
     pathProjectGet.push(pathPro);
 }, this);
+//make project's list
 app.locals.prList = projectGet(pathProjectGet,path.join(pathPublic,config.pathProjectsInfo));
 
 

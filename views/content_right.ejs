@@ -15,7 +15,7 @@
         a.setAttribute('target','_blank');
         var img = document.createElement('img');
         img.setAttribute('src',img_link);
-        img.setAttribute('alt',img_link+'not find!');
+        img.setAttribute('alt',img_link+' not find!');
         img.setAttribute('style',"width:500px;height:300px;");
         a.appendChild(img);
         box.appendChild(a);
@@ -28,10 +28,9 @@
         xmlhttp.onreadystatechange = function(){
             if(xmlhttp.readyState ==4 && xmlhttp.status == 200){
                  var dom = document.getElementById('projects');
-                 var data = JSON.parse(xmlhttp.responseText);
-                 var prList = data.projects;
+                 var prList = JSON.parse(xmlhttp.responseText);
                  for(var i =0;i<prList.length;i++){
-                     dom.appendChild(creatbox(prList[i],prList[i]+'.html',prList[i]+'.jpg'));
+                     dom.appendChild(creatbox(prList[i].info,prList[i].href,prList[i].img_href));
                  }
                  //alert(data.message);
             }
