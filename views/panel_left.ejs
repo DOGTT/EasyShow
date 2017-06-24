@@ -43,7 +43,7 @@
         </li>
         <li id = "e_mail" class = "myInfo_li">
             <svg class="icon "><use xlink:href="#icon-mail"></use></svg>
-            <a class="pannel_a" href="mailto:"+<%= index_info.pannel.e_mail%>><%= index_info.pannel.e_mail%></a>
+            <a class="pannel_a" href="mailto:'<%= index_info.pannel.e_mail%>'"+><%= index_info.pannel.e_mail%></a>
         </li>
         <li id = "github" class = "myInfo_li">
             <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
@@ -51,4 +51,17 @@
         </li>
         
     </ul>
+    <script>
+        var panel = document.getElementById( 'panel' );
+        var head_portrait = document.getElementById( 'head_portrait' );
+        function resizeImg() {   
+            var fullWidth = panel.clientWidth;
+            var width =  (fullWidth*0.8);  
+            head_portrait.style.width = width+ 'px';
+            head_portrait.style.height = width+ 'px';
+            console.log(fullWidth,width);
+        }
+        window.addEventListener( 'resize', resizeImg, false );
+        resizeImg();
+    </script>
 </div>

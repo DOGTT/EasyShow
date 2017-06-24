@@ -1,7 +1,7 @@
 body{
     background: #ffffff;
     margin: 0px;
-    font-family: sans-serif,helvetica;
+    font: normal 100% Helvetica, Arial, sans-serif;
     /*//line-height: 15px;*/
     color: white;
     background: #ccffff;
@@ -17,22 +17,28 @@ body{
     left: 0px;
     top: 0px;
     bottom: 0px;
-    width:200px;
+    width:20%;
     background: #66CCFF;
     text-align:center;
 }
 #panel #title{
-    margin-top: 30px;
+    margin-top: 10%;
+}
+#title1,#title2{
+    margin: 0 10px;
+    word-wrap:break-word; 
 }
 #title1{
-    font-size: 30px;
+    font-size: 25px;
+    text-shadow: 0px 0px 2px black;
 }
 #title2{
-    font-size: 20px;
+    font-size: 15px;
 }
 #myInfo{
     padding: 0;
-    margin: 0 10px 0 20px;
+    bottom: 0px;
+    margin: 0 20px 0 20px;
     list-style: none;
     text-align:left;
     border-top: 1px #e1e4e8 solid !important;
@@ -45,18 +51,16 @@ body{
     margin: 16px 16px;
 }
 .m_span div{
-    word-wrap:break-word;
-    font-size: 15px;
+    word-wrap:break-word; 
     display: inline;
 }
 .pannel_a{
-    font-size: 15px;
     color: #666999;
     text-decoration:none;
-
 }
 .myInfo_li{
-    margin: 5px 0px;
+    font-size: 15px;
+    margin: 5% 0;
 }
 .icon {
   width: 14px;
@@ -71,8 +75,8 @@ body{
     position: absolute;
     top: 0px;
     right: 0px;
-    left: 200px;
-    padding: 10px 20px 10px 30px;
+    left: 20%;
+    padding: 10px 30px 10px 30px;
     background: #ccffff;
 }
 
@@ -100,4 +104,45 @@ body{
     display: block;
     background: #66CCFF;
     color: #fff;
+}
+/*media*/
+@media all and (max-width:1000px) and (min-width:640px){
+    .myInfo_li{
+        font-size: 12px;
+        margin: 5% 0;
+    }
+    .icon {
+        width: 12px;
+        height: 12px;
+    }
+}
+@media all and (max-width:640px){
+    #head_portrait{
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+        margin: 10px 10px;
+    }
+    #title1{
+    font-size: 150%;
+    }
+    #title2{
+        font-size: 100%;
+    }
+    .myInfo_li{
+        font-size: 80%;
+        margin: 5px 0px;
+    }
+    #panel{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 700px;
+        width:100%;
+    }
+    #content{
+        position: absolute;
+        top: 700px;
+        left: 0px;
+    }
 }
