@@ -6,18 +6,18 @@
 ![enter image description here](http://tideh.bid/pageindex.jpg)
 
 #### 1.构建方式
-````js
+```javascript
 npm install
 ```
 #### 2.运行
-```js
+```javascript
 node index.js
 ```
 #### 3.个人配置
 1.修改端口和项目查找目录配置
 文件目录：
 ``/config/default.js``
-```js
+```javascript
 module.exports = {
     //basic config
     name:'my Site',
