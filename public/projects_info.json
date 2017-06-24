@@ -1,22 +1,19 @@
 {
     "projectsIn":{
-        "index.html":{
-            "info":"地球数据可视化DEMO"
-        },
-        "audio_magic.html":{
-            "info":"音频线圈"
+        "test.html":{
+            "info":"This is test page"
         }
     },
     "projectsOut":[
         {
             "href":"http://baidu.com",
-            "img_href":"1.jpg",
-            "info":"百度"
+            "img_href":"test.jpg",
+            "info":"BAIDU"
         },
         {
             "href":"http://weibo.com",
-            "img_href":"1.jpg",
-            "info":"微博"
+            "img_href":"test.jpg",
+            "info":"WEIBO"
         }
     ]
 

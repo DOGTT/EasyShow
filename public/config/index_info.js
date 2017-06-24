@@ -1,12 +1,12 @@
 module.exports = {
     pannel:{
-        tittle:'Tide.H.',
-        message:'webGL',
+        tittle:'tittle',
+        message:'all the pannel config is on pbulic/index_info.js',
         head_portrait:'/img/me.jpg',
-        about_me:'a Computer graphics enthusiast',
-        sayhi:'welcome!',
-        e_mail:'tide_h@foxmail.com',
-        github:'https://github.com/DOGTT',
+        about_me:'need config',
+        sayhi:'need config!',
+        e_mail:'need config',
+        github:'need config',
         link:[]
     }
 }
