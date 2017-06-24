@@ -26,11 +26,11 @@ app.locals.index_info = index_info;
 //add public
 app.use(express.static(pathPublic));
 //add img path
-app.use(express.static(path.join(pathPublic,config.pathProjectsImg)));
+app.use('/'+config.pathProjectsImg,express.static(path.join(pathPublic,config.pathProjectsImg)));
 //add projects path
 config.pathProjectsFind.forEach(function(element) {
     var pathPro = path.join(pathPublic,config.pathProjectsBasic,element);
-    app.use(express.static(pathPro));
+    app.use('/'+config.pathProjectsBasic,express.static(pathPro));
     pathProjectGet.push(pathPro);
 }, this);
 //make project's list
