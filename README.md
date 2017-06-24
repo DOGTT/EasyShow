@@ -1,23 +1,23 @@
 ## webSite
 
-#####轻松的打造一个个人站点
+#### 轻松的打造一个个人站点
 可以查找指定文件目录下的html文件来生成前端网页
 [DEMO](http:tideh.bid)
 ![enter image description here](http://tideh.bid/pageindex.jpg)
 
-####1.构建方式
+#### 1.构建方式
 ````js
 npm install
 ```
-####2.运行
-````js
+#### 2.运行
+```js
 node index.js
 ```
-####3.个人配置
+#### 3.个人配置
 1.修改端口和项目查找目录配置
 文件目录：
 ``/config/default.js``
-````js
+```js
 module.exports = {
     //basic config
     name:'my Site',
@@ -38,7 +38,7 @@ module.exports = {
 `pathProjectsInfo`项目的配置信息文件
 2.修改页面元素显示信息
 ``/public/config/index_info.js``
-````js
+```js
 module.exports = {
     pannel:{
         title:'this is title',
@@ -59,7 +59,7 @@ module.exports = {
 3.修改项目显示配置
 ``pathProjectsInfo``
 
-````json
+```json
 {
     "projectsIn":{
         "test.html":{
