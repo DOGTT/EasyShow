@@ -10,6 +10,6 @@ module.exports = {
         link:[]
     },
     content:{
-        title:'this is title'
+        title:'this is content title '
     }
 }
