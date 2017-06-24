@@ -16,13 +16,16 @@ body{
     top: 0px;
     bottom: 0px;
     width:200px;
-    background: #afd
+    background: #66CCFF;
+}
+#head_portrait{
+    width: 150px;
+    height: 150px;
 }
 #panel #tittle{
     background: #faf;
 }
 #panel #message{
-    
     background: #fa0;
 }
 
@@ -33,7 +36,7 @@ body{
     right: 0px;
     left: 200px;
     padding: 50px 50px;
-    background: #555;
+    background: #fff;
 }
 
 .pr_box img{
@@ -60,5 +63,15 @@ body{
     display: block;
     background: #c05;
     color: #fff;
-    
+}
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+.icon-bubbles {
+  width: 1.125em;
 }
