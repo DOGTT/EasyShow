@@ -4,6 +4,7 @@ body{
     font-family: sans-serif,helvetica;
     /*//line-height: 15px;*/
     color: white;
+    background: #ccffff;
 }
 * {
   -webkit-box-sizing: border-box;

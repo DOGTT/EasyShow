@@ -30,7 +30,8 @@
                  var dom = document.getElementById('projects');
                  var prList = JSON.parse(xmlhttp.responseText);
                  for(var i =0;i<prList.length;i++){
-                     dom.appendChild(creatbox(prList[i].info,'/projects/'+prList[i].href,'/projects_img/'+prList[i].img_href));
+                     if(!prList[i].href.match('http')) prList[i].href +=  '/projects/';
+                     dom.appendChild(creatbox(prList[i].info,prList[i].href,'/projects_img/'+prList[i].img_href));
                  }
                  //alert(data.message);
                     resize();
