@@ -3,6 +3,7 @@ body{
     margin: 0px;
     font-family: sans-serif,helvetica;
     /*//line-height: 15px;*/
+    color: white;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -17,16 +18,51 @@ body{
     bottom: 0px;
     width:200px;
     background: #66CCFF;
+    text-align:center;
+}
+#panel #title{
+    margin-top: 30px;
+}
+#title1{
+    font-size: 30px;
+}
+#title2{
+    font-size: 20px;
+}
+#myInfo{
+    padding: 0;
+    margin: 0 10px 0 20px;
+    list-style: none;
+    text-align:left;
+    border-top: 1px #e1e4e8 solid !important;
+    border-bottom: 1px #e1e4e8 solid !important;
 }
 #head_portrait{
     width: 150px;
     height: 150px;
+    border-radius: 20px;
+    margin: 16px 16px;
 }
-#panel #tittle{
-    background: #faf;
+.m_span div{
+    word-wrap:break-word;
+    font-size: 15px;
+    display: inline;
 }
-#panel #message{
-    background: #fa0;
+.pannel_a{
+    font-size: 15px;
+    color: #666999;
+    text-decoration:none;
+
+}
+.myInfo_li{
+    margin: 5px 0px;
+}
+.icon {
+  width: 14px;
+  height: 14px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
 }
 
 /*content*/
@@ -35,8 +71,8 @@ body{
     top: 0px;
     right: 0px;
     left: 200px;
-    padding: 50px 50px;
-    background: #fff;
+    padding: 10px 20px 10px 30px;
+    background: #ccffff;
 }
 
 .pr_box img{
@@ -48,8 +84,8 @@ body{
     position: relative;
     display: inline-block;
     padding: 0px 0px;
-    margin: 10px 20px;
-    border: 4px solid #c05;
+    margin: 10px 10px;
+    border: 4px solid #66CCFF;
     border-radius: 0.5em;
     overflow:hidden;
 }
@@ -61,17 +97,6 @@ body{
     right: 0px;
     position: absolute;
     display: block;
-    background: #c05;
+    background: #66CCFF;
     color: #fff;
-}
-.icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-}
-.icon-bubbles {
-  width: 1.125em;
 }

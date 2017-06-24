@@ -28,31 +28,27 @@
     </svg>
 
     <div id = "title">
-        <h1><%= index_info.pannel.tittle%></h1> 
-        <img  id = "head_portrait" src="https://avatars2.githubusercontent.com/u/20570500?v=3&amp;s=460" />
-        <h3><%= index_info.pannel.message%></h3>
-        </h3>
+        <div id="title1" class = "title_text"><%= index_info.pannel.tittle%></div> 
+        <div id="title2" class = "title_text"><%= index_info.pannel.message%></div>
     </div>
+    <img  id = "head_portrait" src=<%= index_info.pannel.head_portrait%> />
     <ul id = "myInfo">
         <li id = "about_me" class = "myInfo_li">
-            <svg class="icon hipster2"><use xlink:href="#icon-hipster2"></use></svg>
-             <span class="m_span"><div>a student </div></span>
+            <svg class="icon"><use xlink:href="#icon-hipster"></use></svg>
+             <span class="m_span"><div><%= index_info.pannel.about_me%></div></span>
         </li>
         <li id = "sayhi" class = "myInfo_li">
             <svg class="icon "><use xlink:href="#icon-heart"></use></svg>
-             <span class="m_span"><div>a student </div></span>
+            <span class="m_span"><div><%= index_info.pannel.sayhi%></div></span>
         </li>
         <li id = "e_mail" class = "myInfo_li">
             <svg class="icon "><use xlink:href="#icon-mail"></use></svg>
-            <a class="u-email" href="mailto:">mail</a>
+            <a class="pannel_a" href="mailto:"+<%= index_info.pannel.e_mail%>><%= index_info.pannel.e_mail%></a>
         </li>
         <li id = "github" class = "myInfo_li">
             <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
-            <a target="_blank" href=<%= index_info.pannel.github%>>GIT</a>
+            <a class="pannel_a" target="_blank" href=<%= index_info.pannel.github%>>Github</a>
         </li>
         
     </ul>
-
-  </div>
-
 </div>

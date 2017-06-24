@@ -1,5 +1,5 @@
 <div id = "content">
-    <h2>my projects</h2>
+    <h3>my projects <==need webGL</h3>
     <div id = "projects">
     </div>
     <script>
@@ -33,9 +33,26 @@
                      dom.appendChild(creatbox(prList[i].info,'/projects/'+prList[i].href,'/projects_img/'+prList[i].img_href));
                  }
                  //alert(data.message);
+                    resize();
             }
         }
        
     })();
+    var projects = document.getElementById( 'projects' );
+    function resize() {
+       var fullWidth = projects.clientWidth;
+        var widtht =  (fullWidth-80)/2;
+        if(widtht < 200)
+            widtht *= 2;
+        var heightt = widtht* 0.6;
+        for ( var i = 0; i < projects.children.length; i ++ ) {
+            var child = projects.children[ i ].children[1].children[0];
+            child.style.width = widtht + 'px';
+            child.style.height = heightt + 'px';
+        }
+        console.log(fullWidth,widtht,heightt);
+    }
+    window.addEventListener( 'resize', resize, false );
+    
     </script>
 </div>
