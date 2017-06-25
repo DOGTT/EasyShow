@@ -37,8 +37,8 @@ body{
 }
 #myInfo{
     padding: 0;
-    bottom: 0px;
-    margin: 0 20px 0 20px;
+    bottom: 0;
+    margin: 0 10% 0 10%;
     list-style: none;
     text-align:left;
     border-top: 1px #e1e4e8 solid !important;
@@ -108,12 +108,12 @@ body{
 /*media*/
 @media all and (max-width:1000px) and (min-width:640px){
     .myInfo_li{
-        font-size: 12px;
+        font-size: 10px;
         margin: 5% 0;
     }
     .icon {
-        width: 12px;
-        height: 12px;
+        width: 8px;
+        height: 8px;
     }
 }
 @media all and (max-width:640px){
