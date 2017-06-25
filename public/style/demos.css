@@ -22,7 +22,7 @@ body{
     text-align:center;
 }
 #panel #title{
-    margin-top: 10%;
+    padding-top: 10%;
 }
 #title1,#title2{
     margin: 0 10px;
@@ -36,7 +36,7 @@ body{
     font-size: 15px;
 }
 #myInfo{
-    padding: 0;
+    padding: 0 0 0 0;
     bottom: 0;
     margin: 0 10% 0 10%;
     list-style: none;
@@ -134,15 +134,15 @@ body{
         margin: 5px 0px;
     }
     #panel{
-        position: absolute;
-        left: 0px;
+        position: relative;
         top: 0px;
-        height: 700px;
+        left: 0px; 
         width:100%;
     }
     #content{
-        position: absolute;
-        top: 700px;
+        position: relative;
         left: 0px;
+        top: 0px;
+        width:100%;
     }
 }

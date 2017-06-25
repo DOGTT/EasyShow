@@ -51,6 +51,9 @@
         </li>
         
     </ul>
+    <div id = 'timeBox'>
+        ccc
+    </div>
     <script>
         var panel = document.getElementById( 'panel' );
         var head_portrait = document.getElementById( 'head_portrait' );
@@ -63,5 +66,21 @@
         }
         window.addEventListener( 'resize', resizeImg, false );
         resizeImg();
+        var timeBox = document.getElementById('timeBox');
+        Number.prototype.padLeft = function (n,str){
+            return Array(n-String(this).length+1).join(str||'0')+this;
+        }
+        function timeshow(){
+        　var NowDate=new Date();
+        　var h=NowDate.getHours();
+        　var m=NowDate.getMinutes();
+        　var s=NowDate.getSeconds();　
+        　timeBox.innerHTML = h.padLeft(2)+':'+m.padLeft(2)+':'+s.padLeft(2);
+        　setTimeout(timeshow,1000);
+        } 
+        function padLeft(nr, n, str){
+            return Array(n-String(nr).length+1).join(str||'0')+nr;
+        }
+        timeshow();
     </script>
 </div>
