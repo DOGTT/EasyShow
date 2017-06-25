@@ -30,7 +30,7 @@
                  var dom = document.getElementById('projects');
                  var prList = JSON.parse(xmlhttp.responseText);
                  for(var i =0;i<prList.length;i++){
-                     if(!prList[i].href.match('http')) prList[i].href +=  '/projects/';
+                     if(!prList[i].href.match('http')) prList[i].href =  '/projects/'+prList[i].href;
                      dom.appendChild(creatbox(prList[i].info,prList[i].href,'/projects_img/'+prList[i].img_href));
                  }
                  //alert(data.message);
@@ -51,7 +51,7 @@
             child.style.width = widtht + 'px';
             child.style.height = heightt + 'px';
         }
-        console.log(fullWidth,widtht,heightt);
+        //console.log(fullWidth,widtht,heightt);
     }
     window.addEventListener( 'resize', resize, false );
     
