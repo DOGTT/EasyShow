@@ -36,6 +36,7 @@ module.exports = {
 `pathProjectsFind` 项目目录的子文件夹
 `pathProjectsImg` 项目的显示图片目录
 `pathProjectsInfo`项目的配置信息文件
+
 2.修改页面元素显示信息
 ``/public/config/index_info.js``
 ```js
@@ -75,3 +76,5 @@ module.exports = {
     ]
 }
 ```
+projectsIn 为本地目录下放的项目信息定义。
+projectsOut 则针对放在其他位置的信息定义。
