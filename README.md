@@ -3,7 +3,7 @@
 #### 轻松的打造一个个人站点
 可以查找指定文件目录下的html文件来生成前端网页
 [DEMO](http:tideh.bid)
-![enter image description here](http://tideh.bid/pageindex.jpg)
+![enter image description here](http://106.14.191.146//pageindex.jpg)
 
 #### 1.构建方式
 ```javascript
