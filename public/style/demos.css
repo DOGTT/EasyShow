@@ -1,4 +1,4 @@
-body {
+body{
     background: #ffffff;
     margin: 0px;
     font: normal 100% Helvetica, Arial, sans-serif;
@@ -6,136 +6,111 @@ body {
     color: white;
     background: #ccffff;
 }
-
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
-
-h3 {
-    color: #66CCFF;
+h3{
+	color:#66CCFF;
 }
-
-
 /*pannel*/
-
-#panel {
+#panel{
     position: fixed;
     left: 0px;
     top: 0px;
     bottom: 0px;
-    width: 20%;
+    width:20%;
     background: #66CCFF;
-    text-align: center;
+    text-align:center;
 }
-
-#panel #title {
+#panel #title{
     padding-top: 10%;
 }
-
-#title1,
-#title2 {
+#title1,#title2{
     margin: 0 10px;
-    word-wrap: break-word;
+    word-wrap:break-word; 
 }
-
-#title1 {
+#title1{
     font-size: 25px;
     text-shadow: 0px 0px 2px black;
 }
-
-#title2 {
+#title2{
     font-size: 15px;
 }
-
-#myInfo {
+#myInfo{
     padding: 0 0 0 0;
     bottom: 0;
     margin: 0 10% 0 10%;
     list-style: none;
-    text-align: left;
+    text-align:left;
     border-top: 1px #e1e4e8 solid !important;
     border-bottom: 1px #e1e4e8 solid !important;
 }
-
-#head_portrait {
+#head_portrait{
     width: 150px;
     height: 150px;
     border-radius: 20px;
     margin: 16px 16px;
 }
-
-.m_span div {
-    word-wrap: break-word;
+.m_span div{
+    word-wrap:break-word; 
     display: inline;
 }
-
-.pannel_a {
+.pannel_a{
     color: #666999;
-    text-decoration: none;
+    text-decoration:none;
 }
-
-.myInfo_li {
+.myInfo_li{
     font-size: 15px;
     margin: 5% 0;
 }
-
 .icon {
-    width: 14px;
-    height: 14px;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
+  width: 14px;
+  height: 14px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
 }
 
-
 /*content*/
-
-#content {
+#content{
     position: absolute;
     top: 0px;
     right: 0px;
     left: 20%;
     padding: 10px 30px 10px 30px;
-    background: #ccffff;
+    background: #def;
 }
 
-.pr_box img {
-    display: block;
-    /*//加上这行可以让父元素大小严格对齐*/
+.pr_box img{
+    display: block; /*//加上这行可以让父元素大小严格对齐*/
     width: 100%;
     height: 100%;
 }
-
-.pr_box {
+.pr_box{
     position: relative;
     display: inline-block;
     padding: 0px 0px;
     margin: 10px 10px;
     border: 4px solid #66CCFF;
     border-radius: 0.5em;
-    overflow: hidden;
+    overflow:hidden;
 }
-
-.pr_box:hover {
-    border-style: dashed;
+.pr_box:hover{
+    border-style:dashed;
 }
-
-.box_head {
-    top: 0px;
+.box_head{
+    top:0px;
     right: 0px;
     position: absolute;
     display: block;
     background: #66CCFF;
     color: #fff;
 }
-
-
 /*media*/
-
-@media all and (max-width:1000px) and (min-width:640px) {
-    .myInfo_li {
+@media all and (max-width:1000px) and (min-width:640px){
+    .myInfo_li{
         font-size: 10px;
         margin: 5% 0;
     }
@@ -144,34 +119,33 @@ h3 {
         height: 8px;
     }
 }
-
-@media all and (max-width:640px) {
-    #head_portrait {
+@media all and (max-width:640px){
+    #head_portrait{
         width: 300px;
         height: 300px;
         border-radius: 20px;
         margin: 10px 10px;
     }
-    #title1 {
-        font-size: 150%;
+    #title1{
+    font-size: 150%;
     }
-    #title2 {
+    #title2{
         font-size: 100%;
     }
-    .myInfo_li {
+    .myInfo_li{
         font-size: 80%;
         margin: 5px 0px;
     }
-    #panel {
+    #panel{
         position: relative;
         top: 0px;
-        left: 0px;
-        width: 100%;
+        left: 0px; 
+        width:100%;
     }
-    #content {
+    #content{
         position: relative;
         left: 0px;
         top: 0px;
-        width: 100%;
+        width:100%;
     }
 }
